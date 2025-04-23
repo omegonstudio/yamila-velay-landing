@@ -3,7 +3,7 @@ import React, { useRef, useMemo } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import * as THREE from "three";
 
-const azul = "#1E3A8A";
+const azul = "#1E3A8A"; 
 const violeta = "#7C3AED";
 
 const TextureMesh: React.FC = () => {
@@ -63,7 +63,7 @@ const TextureMesh: React.FC = () => {
             float rz = map(p);
             float f = clamp((rz - map(p + 0.1)) * 0.5, -0.1, 1.0);
             vec3 l = vec3(0.1, 0.3, 0.4) + vec3(5.0, 2.5, 3.0) * f;
-            cl = cl * l + smoothstep(2.5, 0.0, rz) * 0.6 * l;
+            cl = cl * l + smoothstep(3.5, 0.0, rz) * 0.6 * l;
             d += min(rz, 1.0);
           }
           
@@ -84,10 +84,10 @@ const TextureMesh: React.FC = () => {
         u_background: {
           value: new THREE.Vector4(bgColor.r, bgColor.g, bgColor.b, 1),
         },
-        u_speed: { value: 0.3 },
-        u_detail: { value: 0.118 },
+        u_speed: { value: 0.5 },
+        u_detail: { value: 0.11118 },
         u_time: { value: 0 },
-        u_mouse: { value: [0, 0] },
+        u_mouse: { value: [1.0,0] },
         u_resolution: { value: [1024, 1024] },
       },
       side: THREE.DoubleSide,
