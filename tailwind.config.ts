@@ -1,6 +1,6 @@
 import type { Config } from "tailwindcss";
 
-export default {
+const config: Config = {
   darkMode: ["class"],
   content: [
     "./pages/**/*.{ts,tsx}",
@@ -8,7 +8,6 @@ export default {
     "./app/**/*.{ts,tsx}",
     "./src/**/*.{ts,tsx}",
   ],
-  prefix: "",
   theme: {
     container: {
       center: true,
@@ -22,20 +21,16 @@ export default {
         josefin: ["Josefin Sans", "sans-serif"],
       },
       colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
+        // tu paleta
         primary: {
-          DEFAULT: "#AD6CD9",
-          foreground: "#ffffff",
-          light: "#C08EE3",
-          dark: "#7B51A6",
+          DEFAULT: "#AD6CD9", // tono principal
+          light: "#C2D4C8", // variante clara
+          dark: "#7B51A6", // variante oscura
+          foreground: "#F8F8F8", // texto sobre primary
         },
         secondary: {
           DEFAULT: "#0D1440",
-          foreground: "#ffffff",
+          foreground: "#FFFFFF",
         },
         accent: {
           DEFAULT: "#ECC165",
@@ -45,6 +40,16 @@ export default {
           DEFAULT: "#C2D4C8",
           foreground: "#0D1440",
         },
+        light: {
+          DEFAULT: "#F8F8F8",
+          foreground: "#0D1440",
+        },
+        // si usas variables CSS para otros colores:
+        border: "hsl(var(--border))",
+        input: "hsl(var(--input))",
+        ring: "hsl(var(--ring))",
+        background: "hsl(var(--background))",
+        foreground: "hsl(var(--foreground))",
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
@@ -102,10 +107,15 @@ export default {
           "linear-gradient(to right, #7B51A6, #AD6CD9, #ECC165)",
         "card-gradient":
           "linear-gradient(110.51deg, #D3BAE4 -17.44%, #F8F8F8 44.52%, #7B51A6 141.59%)",
+        "courses-gradient": "linear-gradient(180deg, #FFFFFF 0%, #D3BAE4 80%)",
+        "higthlight-gradient": "linear-gradient(180deg, #FFFFFF 0%, #AD6CD9 80%, #7B51A6 101%)",
+
         "star-pattern":
           "radial-gradient(circle, rgba(236,193,101,0.15) 1px, transparent 1px)",
       },
     },
   },
   plugins: [require("tailwindcss-animate")],
-} satisfies Config;
+};
+
+export default config;

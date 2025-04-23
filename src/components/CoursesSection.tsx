@@ -42,12 +42,12 @@ const courses = [
 
 const CoursesSection = () => {
   return (
-    <section id="cursos" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+    <section id="cursos" className="py-20 px-4 sm:px-6 lg:px-8 bg-secondary">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-secondary">Mis Cursos</h2>
-          <div className="w-20 h-1 bg-primary mx-auto mb-6"></div>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-light">Mis Cursos</h2>
+          <div className="w-20 h-1 bg-accent mx-auto mb-6"></div>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto text-light">
             Programas de formación que combinan sabiduría ancestral y técnicas modernas para tu desarrollo energético y espiritual
           </p>
         </div>
@@ -56,8 +56,8 @@ const CoursesSection = () => {
           {courses.map((course) => (
             <Card 
               key={course.id} 
-              className={`overflow-hidden border-none shadow-lg hover:shadow-xl transition-all cosmic-card ${
-                course.highlight ? 'transform hover:-translate-y-2' : ''
+              className={`overflow-hidden border-none shadow-lg hover:shadow-xl transition-all bg-courses-gradient ${
+                course.highlight ? 'bg-higthlight-gradient transform hover:-translate-y-2' : ''
               }`}
             >
               <div className="relative h-48 overflow-hidden">
@@ -117,7 +117,7 @@ const CoursesSection = () => {
           ))}
         </div>
 
-        <div className="mt-16 bg-primary-light/10 rounded-lg p-8 text-center">
+        <div className="mt-16 bg-muted rounded-lg p-8 text-center">
           <h3 className="text-2xl font-bold text-secondary mb-4">¿Buscas formación personalizada?</h3>
           <p className="text-gray-700 mb-6 max-w-3xl mx-auto">
             Ofrezco programas de mentoría a medida para personas que desean una guía personalizada en su camino espiritual o profesionales holísticos que quieren profundizar en técnicas específicas.

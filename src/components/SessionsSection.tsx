@@ -8,7 +8,7 @@ const sessions = [
     id: 1,
     title: "Sesión de Alineación Energética",
     duration: "60 minutos",
-    price: "$85",
+    price: "$15.000",
     description: "Equilibra tus centros energéticos eliminando bloqueos y armonizando el flujo de energía vital. Perfecto para quienes experimentan cansancio, falta de claridad o desequilibrios emocionales.",
     benefits: ["Equilibrio energético", "Claridad mental", "Bienestar emocional", "Conexión interior"],
     icon: "✨"
@@ -16,8 +16,8 @@ const sessions = [
   {
     id: 2,
     title: "Coaching de Conexión Cósmica",
-    duration: "90 minutos",
-    price: "$120",
+    duration: "60 minutos",
+    price: "$15.000",
     description: "Una sesión personalizada para ayudarte a establecer una comunicación profunda con tu esencia y las energías universales. Desarrolla tu intuición y expande tu consciencia espiritual.",
     benefits: ["Expansión de consciencia", "Desarrollo intuitivo", "Conexión espiritual", "Guía personalizada"],
     icon: "🌌"
@@ -25,8 +25,8 @@ const sessions = [
   {
     id: 3,
     title: "Sanación de Vidas Pasadas",
-    duration: "120 minutos",
-    price: "$150",
+    duration: "60 minutos",
+    price: "$15.000",
     description: "Explora y sana patrones limitantes arraigados en experiencias pasadas. Resuelve conflictos kármicos y libera cargas energéticas que afectan tu presente.",
     benefits: ["Liberación de patrones", "Sanación profunda", "Resolución kármica", "Integración energética"],
     icon: "🔮"
@@ -34,8 +34,8 @@ const sessions = [
   {
     id: 4,
     title: "Meditación Guiada Personalizada",
-    duration: "45 minutos",
-    price: "$65",
+    duration: "60 minutos",
+    price: "$15.000",
     description: "Aprende técnicas de meditación adaptadas a tus necesidades para conectar con tu paz interior y elevar tu vibración energética. Incluye grabación para práctica en casa.",
     benefits: ["Técnicas personalizadas", "Grabación exclusiva", "Elevación vibracional", "Práctica diaria"],
     icon: "🧘‍♀️"
@@ -44,7 +44,7 @@ const sessions = [
 
 const SessionsSection = () => {
   return (
-    <section id="sesiones" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 star-bg">
+    <section id="sesiones" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 bg-primary-foreground">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-secondary">Mis Sesiones</h2>
