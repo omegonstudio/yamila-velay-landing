@@ -30,6 +30,7 @@ const config: Config = {
         },
         secondary: {
           DEFAULT: "#0D1440",
+          dark:"#646262",
           foreground: "#FFFFFF",
         },
         accent: {

@@ -117,9 +117,9 @@ const CoursesSection = () => {
           ))}
         </div>
 
-        <div className="mt-16 bg-muted rounded-lg p-8 text-center">
-          <h3 className="text-2xl font-bold text-secondary mb-4">¿Buscas formación personalizada?</h3>
-          <p className="text-gray-700 mb-6 max-w-3xl mx-auto">
+        <div className="mt-16 bg-secondary-dark rounded-lg p-8 text-center">
+          <h3 className="text-2xl font-bold text-secondary-foreground mb-4">¿Buscas formación personalizada?</h3>
+          <p className="text-secondary-foreground mb-6  text-xl max-w-6xl mx-auto">
             Ofrezco programas de mentoría a medida para personas que desean una guía personalizada en su camino espiritual o profesionales holísticos que quieren profundizar en técnicas específicas.
           </p>
           <Button size="lg" className="bg-accent text-secondary hover:bg-accent/80">
