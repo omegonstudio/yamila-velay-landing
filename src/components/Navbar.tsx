@@ -1,12 +1,11 @@
-
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from 'lucide-react';
+import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  
+
   useEffect(() => {
     const handleScroll = () => {
       const offset = window.scrollY;
@@ -17,9 +16,9 @@ const Navbar = () => {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -27,25 +26,29 @@ const Navbar = () => {
     { name: "Inicio", href: "#hero" },
     { name: "Quién Soy", href: "#quien-soy" },
     { name: "Sesiones", href: "#sesiones" },
-    { name: "Cursos", href: "#cursos" }
+    { name: "Cursos", href: "#cursos" },
   ];
 
   return (
-    <nav 
+    <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? 'bg-secondary/90 backdrop-blur-sm shadow-md' : 'bg-transparent'
+        scrolled
+          ? "bg-secondary/90 backdrop-blur-sm shadow-md"
+          : "bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-18">
           <div className="flex items-center">
             <a href="#hero" className="flex-shrink-0">
-              <h1 className="text-2xl font-bold bg-clip-text text-transparent bg-cosmic-gradient">
-                Universo Interior
-              </h1>
+              <img
+                src="/06.svg"
+                alt="Yamila Velay"
+                className="h-15 w-16 mt-2 py-2"
+              />
             </a>
           </div>
-          
+
           {/* Desktop menu */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-center space-x-4">
@@ -58,16 +61,20 @@ const Navbar = () => {
                   {item.name}
                 </a>
               ))}
-              <Button 
-                variant="default" 
+              <Button
+                variant="default"
                 className="bg-accent text-secondary hover:bg-accent/80"
-                onClick={() => document.getElementById('sesiones')?.scrollIntoView({ behavior: 'smooth' })}
+                onClick={() =>
+                  document
+                    .getElementById("sesiones")
+                    ?.scrollIntoView({ behavior: "smooth" })
+                }
               >
                 Reservar Sesión
               </Button>
             </div>
           </div>
-          
+
           {/* Mobile menu button */}
           <div className="md:hidden">
             <button
@@ -95,11 +102,13 @@ const Navbar = () => {
                 {item.name}
               </a>
             ))}
-            <Button 
-              variant="default" 
+            <Button
+              variant="default"
               className="w-full bg-accent text-secondary hover:bg-accent/80 mt-3"
               onClick={() => {
-                document.getElementById('sesiones')?.scrollIntoView({ behavior: 'smooth' });
+                document
+                  .getElementById("sesiones")
+                  ?.scrollIntoView({ behavior: "smooth" });
                 setIsMenuOpen(false);
               }}
             >

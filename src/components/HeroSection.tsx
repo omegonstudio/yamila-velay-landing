@@ -15,7 +15,6 @@ const HeroSection = () => {
           <div className="absolute top-40 right-20 w-12 h-12 rounded-full bg-muted/20 animate-float" style={{ animationDelay: "2.5s" }}></div>
         </div>
         
-        <span className="block text-accent font-light mb-3 animate-pulse-slow">Descubre tu</span>
         
         <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
           Conexión con el <span className="bg-clip-text text-transparent bg-cosmic-gradient">Universo</span> y tu Energía Interior

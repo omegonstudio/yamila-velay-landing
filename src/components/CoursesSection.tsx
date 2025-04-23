@@ -14,7 +14,7 @@ const courses = [
     features: ["6 módulos en video", "Meditaciones guiadas", "Manual digital", "Comunidad privada"],
     status: "Inscripciones abiertas",
     highlight: false,
-    image: "https://images.unsplash.com/photo-1628328126611-a94a53644d16?auto=format&fit=crop&q=80"
+    image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&q=80"
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ const courses = [
     features: ["8 módulos intensivos", "Sesiones en vivo", "Kit energético físico", "Certificación digital"],
     status: "Cupos limitados",
     highlight: true,
-    image: "https://images.unsplash.com/photo-1493197199601-f97d34439789?auto=format&fit=crop&q=80"
+    image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&q=80"
   },
   {
     id: 3,
