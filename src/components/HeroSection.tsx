@@ -11,15 +11,7 @@ const HeroSection = () => (
     <div className="absolute inset-0 -z-15 overflow-hidden">
       <ShaderCanvas />
       {/* Puedes mantener tus círculos flotantes si quieres */}
-      <div className="absolute top-10 left-10 w-20 h-20 rounded-full bg-primary/20 animate-float"></div>
-      <div
-        className="absolute bottom-10 right-10 w-16 h-16 rounded-full bg-accent/20 animate-float"
-        style={{ animationDelay: "1.5s" }}
-      ></div>
-      <div
-        className="absolute top-40 right-20 w-12 h-12 rounded-full bg-muted/20 animate-float"
-        style={{ animationDelay: "2.5s" }}
-      ></div>
+   
     </div>
 
     {/* Contenido */}
