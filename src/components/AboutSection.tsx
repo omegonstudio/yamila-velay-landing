@@ -21,7 +21,7 @@ const AboutSection = () => {
             </h3>
             
             <p className="text-gray-700 mb-4">
-              Mi nombre es Ana y llevo más de una década dedicándome al <strong>coaching holístico</strong> y las prácticas espirituales. Mi camino comenzó tras un profundo despertar personal que me llevó a estudiar diversas disciplinas energéticas y ancestrales.
+              Mi nombre es Yamila y llevo más de una década dedicándome al <strong>coaching holístico</strong> y las prácticas espirituales. Mi camino comenzó tras un profundo despertar personal que me llevó a estudiar diversas disciplinas energéticas y ancestrales.
             </p>
             
             <p className="text-gray-700 mb-4">
@@ -46,7 +46,7 @@ const AboutSection = () => {
               <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary/30 shadow-xl cosmic-card">
                 <img 
                   src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&q=80" 
-                  alt="Ana, especialista en coaching holístico y conexión cósmica" 
+                  alt="Yamila, especialista en coaching holístico y conexión cósmica" 
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -73,7 +73,7 @@ const AboutSection = () => {
             }
           ].map((item, index) => (
             <Card key={index} className="border-none shadow-md hover:shadow-xl transition-shadow cosmic-card">
-              <CardContent className="p-6">
+              <CardContent className="p-6 bg-card-gradient">
                 <h3 className="text-xl font-semibold mb-3 text-secondary">{item.title}</h3>
                 <p className="text-gray-600">{item.description}</p>
               </CardContent>

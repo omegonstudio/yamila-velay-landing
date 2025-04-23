@@ -16,7 +16,7 @@ const HeroSection = () => {
         </div>
         
         
-        <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+        <h1 className="text-4xl md:text-7xl font-bold mb-14 leading-tight">
           Conexión con el <span className="bg-clip-text text-transparent bg-cosmic-gradient">Universo</span> y tu Energía Interior
         </h1>
         
